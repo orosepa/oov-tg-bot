@@ -47,14 +47,6 @@ fun Application.startOovBot() {
                             "Количество можно изменить в меню",
                     replyMarkup = keyboardMarkup
                 )
-
-                bot.sendMessage(
-                    chatId = ChatId.fromId(chatId),
-                    text = "ИНСТРУКЦИЯ" +
-                            "\n/all -- сообщение всем" +
-                            "\n/reset -- изменить количество паков напишите типа /reset 228" +
-                            "\n\nкнопки внизу чтобы менять количество паков больше нет там теперь стата"
-                )
             }
 
             command("all") {
